@@ -4,7 +4,7 @@ let contadorEmpate=0;
 let contadorPc=0;
 let contadorUser=0;
 let veri=false;
-if(intentos>=1){
+if(!isNaN(intentos)){
     for(let i=1;i<=intentos;i++){
     let usuario=+prompt("Escoja una opcion  \n[1]Piedra \n[2]Papel \n[3]Tijera");
     if(usuario>=1 && usuario<=3){
