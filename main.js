@@ -4,7 +4,10 @@ let contadorEmpate=0;
 let contadorPc=0;
 let contadorUser=0;
 let veri=false;
-if(!isNaN(intentos)){
+if(intentos==0){
+    alert("que aburrido! escribió 0"); 
+}else if(!isNaN(intentos) ){
+
     for(let i=1;i<=intentos;i++){
     let usuario=+prompt("Escoja una opcion  \n[1]Piedra \n[2]Papel \n[3]Tijera");
     if(usuario>=1 && usuario<=3){
@@ -41,14 +44,13 @@ if(!isNaN(intentos)){
             contadorEmpate++;
         }      
     }else{
-        alert("opcion incorrecta")
+        alert("opcion incorrecta");
         i--;
     }
 }
 alert("Partidas jugadas: " + contador +"\nPartidas ganadas por el PC: " + contadorPc +"\nPartidas ganadas por el jugador: " + contadorUser + "\nPartidas empatadas: "+ contadorEmpate)
-}else if(intentos==0){
-    alert("que aburrido! escribió 0")   
+  
 }else{
-    alert("dato invalido!")   
+    alert("dato invalido!");   
 }
 
