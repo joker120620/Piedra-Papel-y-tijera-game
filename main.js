@@ -29,10 +29,7 @@ if(intentos>=1){
             }else if((pc===3)&&(usuario===2)){
                 alert("gana el Pc \nPc= Tijera \nusuario= Papel");
                 contadorPc++;
-            }
-            
-            
-            
+            }                             
         }else{
             if((pc===3)&&(usuario===3)){
                 alert("Empate \nusuario= Tijera \nPC= Tijera");
@@ -42,10 +39,7 @@ if(intentos>=1){
                 alert("Empate \nusuario= Piedra \nPC= Piedra");
             }
             contadorEmpate++;
-            
-
-        }
-        
+        }      
     }else{
         alert("opcion incorrecta")
         i--;
@@ -53,10 +47,8 @@ if(intentos>=1){
 }
 alert("Partidas jugadas: " + contador +"\nPartidas ganadas por el PC: " + contadorPc +"\nPartidas ganadas por el jugador: " + contadorUser + "\nPartidas empatadas: "+ contadorEmpate)
 }else if(intentos==0){
-    alert("que aburrido! escribió 0")
-    
+    alert("que aburrido! escribió 0")   
 }else{
-    alert("dato invalido!")
-    
+    alert("dato invalido!")   
 }
 
